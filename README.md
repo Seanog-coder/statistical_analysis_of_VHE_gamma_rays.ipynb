@@ -14,6 +14,32 @@ It models on-source and off-source event counts as Poisson processes, applying t
 Clone the repository and install the required Python packages:
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/Seanog-coder/statistical_analysis_of_VHE_gamma_rays.git
+cd statistical_analysis_of_VHE_gamma_rays.git
 pip install -r requirements.txt
+```
+## Requirements
+This project depends on the following python packages:
+- numpy
+- matplotlib
+- scipy
+- jupyter
+
+These are included in the `requirements.txt` file for easy installation
+
+## Usage
+Lauch the notebook and run the analysis:
+
+```bash
+jupyter notebook statistical_analysis_of_VHE_gamma_rays.ipynb
+```
+Adjust the parameters like `lambda_param`,`alpha`, and `N` inside the notebook to explore different scenarios.
+
+## Example Output
+- Histogram of Li & Ma significance values with a normal PDF overlay.
+- Significance build-up curves with different alpha ratios.
+- Shapiro-wilks test results (shows normality of distribution)
+
+## Reference
+Li, T.-P., & Ma, Y.-Q. (1983). _Analysis methods for results in gamma-ray astronomy._
+The Astrophysical Journal, 272, 317–324.
